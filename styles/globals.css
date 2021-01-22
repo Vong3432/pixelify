@@ -10,6 +10,10 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+body {
+  background-color: #F1F5F9;
+}
+
 a {
   color: inherit;
   text-decoration: none;
