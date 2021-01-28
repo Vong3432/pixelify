@@ -5,11 +5,27 @@ import Navbar from '../components/includes/Navbar'
 import AlertContextProvider, { AlertContext } from '../context/AlertContext'
 import '../styles/globals.css'
 import Banner from '../components/common/Banner'
+import Head from 'next/head'
 
 function MyApp({ Component, pageProps }) {
 
   return (
     <>
+      <Head>
+        <title>Pixelify - Free Image Pixelation Tools Online.</title>
+        <meta name="description" content="Pixelize your image for free online." />
+        <link rel="icon" href="/assets/svg/logo.svg" />
+
+        <meta property="og:title" content="Pixelify - Free Image Pixelation Tools Online." />
+        <meta property="og:description" content="Offering tour packages for individuals or groups." />
+        <meta property="og:image" content="/assets/img/meta.png"/>
+        <meta property="og:url" content="https://pixelify.vercel.app/"></meta>
+
+        <meta name="twitter:title" content="Pixelify - Free Image Pixelation Tools Online." />
+        <meta name="twitter:description" content="Offering tour packages for individuals or groups." />
+        <meta name="twitter:image" content="/assets/img/meta.png" />
+        <meta name="twitter:card" content="/assets/img/meta.png"></meta>
+      </Head>
       <AlertContextProvider>
         <Content Component={Component} pageProps={pageProps} />
       </AlertContextProvider>
