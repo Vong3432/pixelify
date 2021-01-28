@@ -4,6 +4,7 @@ import Alert from '../components/common/Alert'
 import Navbar from '../components/includes/Navbar'
 import AlertContextProvider, { AlertContext } from '../context/AlertContext'
 import '../styles/globals.css'
+import Banner from '../components/common/Banner'
 
 function MyApp({ Component, pageProps }) {
 
@@ -24,6 +25,7 @@ function Content({ Component, pageProps }) {
   return (
     <div className="font-mono">
       <Navbar />
+      <Banner />
       <Component {...pageProps} />
 
       <div className="flex justify-center">
