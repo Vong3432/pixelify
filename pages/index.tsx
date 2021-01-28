@@ -116,9 +116,19 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Pixelify</title>
+        <title>Pixelify - Free Image Pixelation Tools Online.</title>
         <meta name="description" content="Pixelize your image for free online." />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/assets/svg/logo.svg" />
+
+        <meta property="og:title" content="Pixelify - Free Image Pixelation Tools Online." />
+        <meta property="og:description" content="Offering tour packages for individuals or groups." />
+        <meta property="og:image" content="/assets/img/meta.png"/>
+        <meta property="og:url" content="https://pixelify.vercel.app/"></meta>
+
+        <meta name="twitter:title" content="Pixelify - Free Image Pixelation Tools Online." />
+        <meta name="twitter:description" content="Offering tour packages for individuals or groups." />
+        <meta name="twitter:image" content="/assets/img/meta.png" />
+        <meta name="twitter:card" content="/assets/img/meta.png"></meta>
       </Head>
 
       <main className={`bg-white rounded-2xl shadow-xl grid xl:grid-cols-2 gap-4 min-h-screen my-20 md:w-full max-w-screen-xl`}>
